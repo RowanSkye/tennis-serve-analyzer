@@ -83,17 +83,19 @@ tennis-serve-analyzer/
 
 ## 💾 경로 설명
 
-| 경로 | 설명 |
-|------|------|
-| `./frames/` | 추출된 프레임 이미지 저장 (7장씩) |
-| `./frames_data/X.npy` | 프레임 이미지 경로 배열 (학습용) |
-| `./frames_data/y.npy` | 프레임 레이블 배열 |
-| `./preprocessed_data_3d/X_3d.npy` | 전처리된 이미지 데이터 (3D-CNN 입력용) |
-| `./preprocessed_data_3d/y_3d.npy` | 전처리된 레이블 |
-| `./failed_videos/` | 프레임 추출 실패 시 이동된 영상 |
-| `./assets/model_plot.png` | 모델 구조 시각화 이미지 |
-| `./analysis/테니스_세션_데이터_v03.xlsx` | 사용자 훈련 기록 엑셀 (시각화 입력 데이터) |
+| 경로 | 설명 | 생성 방식 |
+|------|------|------------|
+| `./frames/` | 추출된 프레임 이미지 저장 (7장씩) | ✅ 자동 생성 |
+| `./frames_data/X.npy` | 프레임 이미지 경로 배열 (학습용) | ✅ 자동 생성 |
+| `./frames_data/y.npy` | 프레임 레이블 배열 | ✅ 자동 생성 |
+| `./preprocessed_data_3d/X_3d.npy` | 전처리된 이미지 데이터 (3D-CNN 입력용) | ✅ 자동 생성 |
+| `./preprocessed_data_3d/y_3d.npy` | 전처리된 레이블 | ✅ 자동 생성 |
+| `./failed_videos/` | 프레임 추출 실패 시 이동된 영상 | ✅ 자동 생성 |
+| `./assets/model_plot.png` | 모델 구조 시각화 이미지 | ✅ 자동 생성 |
+| `./analysis/테니스_세션_데이터_v03.xlsx` | 사용자 훈련 기록 엑셀 (시각화 입력 데이터) | ❌ 수동 준비 |
+| `./data/` | 원본 영상 폴더, 직접 영상 넣어야 함 | ❌ 수동 준비 |
 
+> ⚠️ 자동 생성되는 폴더는 GitHub에 포함되지 않으며, 코드를 실행하면 생성됩니다.
 ---
   
 ## 📦 영상 데이터 다운로드 안내
@@ -109,4 +111,4 @@ tennis-serve-analyzer/
 
 ## 🙌 기여자
 - 원작자: Ngan Han Kiong  
-- 리디자인 및 코드 수정: RowanSkye
+- 코드 구조 개선 및 기능 확장 : RowanSkye
