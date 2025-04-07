@@ -1,0 +1,7 @@
+# 💾 데이터/프레임/전처리 결과 등 대용량 파일 제외
+data/
+frames/
+frames_data/
+preprocessed_data_3d/
+failed_videos/
+
